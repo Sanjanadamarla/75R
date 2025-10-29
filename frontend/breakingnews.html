@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        .breakingnews-container {
+            display: flex;               /* Put marquees side by side */
+            border: 2px solid black;     /* One merged border */
+            width: 1250px;               /* Adjust width as needed */
+            height: 22px;
+        }
+        #f1 {
+            text-align: center;
+            color: white;
+            background-color: red;
+            width: 200px;                /* Fixed width for Breaking News */
+        }
+        #f2 {
+            flex: 1;                     /* Take remaining space */
+        }
+        marquee {
+            height: 22px;
+            line-height: 22px;           /* Vertically center text */
+        }
+    </style>
+</head>
+<body>
+
+<div class="breakingnews-container">
+    <marquee id="f1" behavior="scroll" direction="left" scrollamount="0">
+        Breaking News
+    </marquee>
+    <marquee id="f2" behavior="scroll" direction="left">
+        President Donald Trump signed an executive action on Friday to impose a $100,000 application fee for H-1B visas — in an effort to curb what his administration says is overuse of the program.
+        <q>We need great workers, and this pretty much ensures that that’s what’s going to happen</q> Trump said from the Oval Office, where officials detailed how the measure would incentivize companies to employ American workers while still providing a pathway to hire highly skilled foreign workers in specialized fields.
+    </marquee>
+</div>
+
+</body>
+</html>
